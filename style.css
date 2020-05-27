@@ -1,0 +1,136 @@
+/* background imgae*/
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(nature.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    background-image: url(nature.jpg);
+  }
+}
+/*icons*/
+.icons {
+  margin: 0;
+  padding: 0;
+  background: #d8d8d8;
+}
+  .icons ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+  }
+  .icons ul li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .icons ul li .fa {
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: #000;
+  }
+  .icons ul li .fa:hover {
+    color: #fff;
+  }
+  .icons ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 4 px rgba(0, 0, 0, .5);
+  }
+  .icons ul li a:hover {
+    transform: translate(0, -10px);
+  }
+  .icons ul li:nth-child(1) a:hover {
+    background-color: #168cfa;
+  }
+  .icons ul li:nth-child(2) a:hover {
+    background-color: gray;
+  }
+  .icons ul li:nth-child(3) a:hover {
+    background-color: red;
+  }
+  .icons ul li:nth-child(4) a:hover {
+    background-color: #fae716;
+  }
+  .main {
+      position: absolute;
+      top: 40%;
+      right:10%;
+      left:10%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+
+    .row {
+      margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+    }
+
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
