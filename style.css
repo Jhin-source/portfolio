@@ -19,13 +19,7 @@ body {
      while the background image is loading */
   background-color: #464646;
 }
-@media only screen and (max-width: 767px) {
-  body {
-    /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections */
-    background-image: url(nature.jpg);
-  }
-}
+
 /*icons*/
 .icons {
   margin: 0;
