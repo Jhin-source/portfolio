@@ -1,0 +1,48 @@
+.NavbarItems {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(45deg, black, white, black);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbar-name {
+  color: white;
+  justify-self: start;
+  cursor: pointer;
+  font-family: "Cookie", cursive;
+}
+
+.logo {
+  height: 65px;
+}
+
+.menu-icon {
+  position: absolute;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 15px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background-color: darkgray;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}

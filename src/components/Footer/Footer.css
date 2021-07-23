@@ -1,0 +1,8 @@
+.footer {
+  text-align: center;
+  background: linear-gradient(45deg, black, white, black);
+  padding-top: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
