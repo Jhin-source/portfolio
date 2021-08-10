@@ -1,4 +1,38 @@
-.main {
+.home-wrapper {
+  background: url(../../assets/homeback.jpg) center center/cover no-repeat;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.welcome-wrapper {
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 2;
+}
+
+.welcome-wrapper h1 {
+  color: orange;
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: oldlace;
+}
+
+.tsparticles-canvas-el {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.loading_screen {
+  height: 100vh;
 }
