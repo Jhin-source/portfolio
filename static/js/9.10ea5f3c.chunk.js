@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[9],{450:function(e,s,t){},469:function(e,s,t){"use strict";t.r(s);t(450);var a=t.p+"static/media/Resume.77b5220a.pdf",c=t(1);s.default=function(){return Object(c.jsx)("div",{className:"resume_container",children:Object(c.jsx)("embed",{className:"resume_pad",src:a,type:"application/pdf"})})}}}]);
+//# sourceMappingURL=9.10ea5f3c.chunk.js.map
