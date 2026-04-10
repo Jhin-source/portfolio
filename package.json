@@ -1,53 +1,30 @@
 {
-  "homepage": "https://jhin-source.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "boostrap": "^2.0.0",
-    "bootstrap": "^5.0.2",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.0.0-beta.4",
-    "react-dom": "^17.0.2",
-    "react-particles-js": "^3.5.3",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-spring": "^9.2.4",
-    "react-typed": "^1.2.0",
-    "styled-components": "^5.3.0",
-    "tsparticles": "^1.32.0",
-    "web-vitals": "^1.0.1"
-  },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "next": "16.2.3",
+    "radix-ui": "^1.4.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

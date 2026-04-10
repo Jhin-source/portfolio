@@ -1,0 +1,21 @@
+{
+  "name": "Jhin McGlynn — Backend & Infrastructure Engineer",
+  "short_name": "Jhin McGlynn",
+  "description": "Backend and infrastructure engineer portfolio",
+  "icons": [
+    {
+      "src": "/android-chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0a0a0c",
+  "background_color": "#0a0a0c",
+  "display": "standalone",
+  "start_url": "/"
+}

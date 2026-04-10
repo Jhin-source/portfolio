@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0a0a0c"/>
+  <text
+    x="32"
+    y="32"
+    font-family="'Space Mono', 'DejaVu Sans Mono', 'Courier New', monospace"
+    font-size="20"
+    font-weight="700"
+    fill="#22d3ee"
+    text-anchor="middle"
+    dominant-baseline="central"
+  >{JM}</text>
+</svg>

@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* ── Colors ── */
+  --color-bg: #0a0a0c;
+  --color-text-primary: #f0f0f0;
+  --color-text-secondary: rgba(255, 255, 255, 0.6);
+  --color-text-tertiary: rgba(255, 255, 255, 0.4);
+  --color-text-muted: rgba(255, 255, 255, 0.2);
+  --color-border-default: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(255, 255, 255, 0.2);
+  --color-surface-1: rgba(255, 255, 255, 0.02);
+  --color-surface-2: rgba(255, 255, 255, 0.04);
+  --color-accent-cyan: #22d3ee;
+  --color-accent-violet: #a78bfa;
+  --color-accent-pink: #f472b6;
+
+  /* ── Fonts ── */
+  --font-display: "Playfair Display", serif;
+  --font-mono: "Space Mono", monospace;
+  --font-body: "IBM Plex Sans", sans-serif;
+
+  /* ── Letter Spacing ── */
+  --tracking-label: 0.15em;
+  --tracking-nav: 0.08em;
+  --tracking-tag: 0.02em;
+  --tracking-tight: -0.02em;
+  --tracking-tighter: -0.03em;
+
+  /* ── Animations ── */
+  --animate-pulse-slow: pulse-slow 2s infinite;
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* ═══════════ TABLET (≤1024px) ═══════════ */
+@media (max-width: 1024px) {
+  .marginalia-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .marginalia-grid > div:last-child {
+    padding-top: 0 !important;
+    padding-left: 12px;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .project-expanded-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+}
+
+/* ═══════════ MOBILE & SMALL TABLET (≤768px) ═══════════ */
+@media (max-width: 768px) {
+  /* Section padding — reclaim vertical and horizontal space */
+  section {
+    padding: 80px 24px !important;
+    max-width: 100% !important;
+  }
+  section#hero {
+    padding: 0 24px !important;
+    min-height: 100vh;
+  }
+  section#contact {
+    padding: 80px 24px 60px !important;
+  }
+
+  /* Grids collapse */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px 16px !important;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* Nav: swap desktop links for hamburger */
+  .site-nav {
+    padding: 14px 20px !important;
+  }
+  .nav-links {
+    display: none !important;
+  }
+  .mobile-menu-toggle {
+    display: flex !important;
+  }
+  .mobile-menu-overlay {
+    display: flex !important;
+  }
+}
+
+/* ═══════════ PHONE (≤480px) ═══════════ */
+@media (max-width: 480px) {
+  section {
+    padding: 64px 20px !important;
+  }
+  section#hero {
+    padding: 0 20px !important;
+  }
+  section#contact {
+    padding: 64px 20px 48px !important;
+  }
+
+  /* Stats grid stays 2x2 on phones too */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px 12px !important;
+  }
+
+  /* Smaller card padding on phones */
+  .marginalia-grid > div:first-child {
+    padding: 24px 20px !important;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+}
+
+body {
+  background: #0a0a0c;
+  color: #f0f0f0;
+  font-family: "IBM Plex Sans", sans-serif;
+  overflow-x: hidden;
+}
